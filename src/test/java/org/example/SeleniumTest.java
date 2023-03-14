@@ -10,7 +10,7 @@ import org.openqa.selenium.devtools.v99.fetch.Fetch;
 public class SeleniumTest {
     @Test
     public void mockAPISelenium() {
-        System.setProperty("webdriver.chrome.driver", "/Users/gurudattsa/IdeaProjects/Selenium4-test/driver/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/driver/chromedriver");
         ChromeDriver driver = new ChromeDriver();
         DevTools devtools = driver.getDevTools();
         devtools.createSession();
