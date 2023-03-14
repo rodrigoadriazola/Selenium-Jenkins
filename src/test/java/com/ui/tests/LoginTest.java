@@ -12,7 +12,8 @@ public class LoginTest {
 
     @Test
     public void testLogin() {
-        System.setProperty("webdriver.chrome.driver", "/Users/gurudattsa/IdeaProjects/Selenium4-test/driver/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+        //options.addArguments("--remote-allow-origins=*");
         ChromeDriver driver = new ChromeDriver();
         LoginPage signInPage = new LoginPage(driver);
         HomePage homePage = signInPage.loginValidUser("userName", "password");
